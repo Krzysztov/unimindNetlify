@@ -1,14 +1,14 @@
 .views__title {
+  font-family: Lovelo;
   display: block;
   width: auto;
   text-align: center;
   color: $base-text-color;
-  font-size: 5rem;
+  font-size: 7rem;
   z-index: 1;
   text-transform: uppercase;
   margin-top: 12rem;
   margin-bottom: 6rem;
-
 
   &:after {
     position: relative;
@@ -20,8 +20,8 @@
     width: auto;
     height: 5rem;
     background-size: cover;
-    background-position: right;
-    background-size: 150%;
+    background-position: left;
+    background-size: 100%;
     z-index: -1;
   }
 }

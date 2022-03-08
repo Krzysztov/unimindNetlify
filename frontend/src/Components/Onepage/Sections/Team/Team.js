@@ -28,25 +28,28 @@ const Team = () => {
   // }, []);
 
   return (
-    
-    
-    <section id="team__view">
+    <section id="team_view">
       <EmptyPage>
-      <Title>NASZ ZESPÓŁ</Title>
-      <div className="team__cards__container">
-        {teamData.map((cardData) => (
-          <Card
-            key={cardData.name}
-            name={cardData.name}
-            nick={cardData.nick}
-            role={cardData.role}
-            image={image}
-          />
-        ))}
-      </div>
+        <Title>NASZ ZESPÓŁ</Title>
+        <div className="team__cards__container">
+          {/* {teamData.map((cardData) => (
+            <Card
+              key={cardData.name}
+              name={cardData.name}
+              nick={cardData.nick}
+              role={cardData.role}
+              image={image}
+            />
+          ))} */}
+          <Card name="Piotr" nick="Saczyy" role="Dictator" image={image} />
+          <Card name="Piotr" nick="Saczyy" role="Dictator" image={image} />
+          <Card name="Piotr" nick="Saczyy" role="Dictator" image={image} />
+          <Card name="Piotr" nick="Saczyy" role="Dictator" image={image} />
+          <Card name="Piotr" nick="Saczyy" role="Dictator" image={image} />
+          <Card name="Piotr" nick="Saczyy" role="Dictator" image={image} />
+        </div>
       </EmptyPage>
     </section>
-    
   );
 };
 

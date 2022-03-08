@@ -7,7 +7,6 @@ import { FaBell } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
-
 const Sidebar = ({ isOpen, closeSidebar }) => {
   const styles = isOpen ? "sidebar sidebar--open" : "sidebar sidebar--closed";
   const { t } = useTranslation();
@@ -65,12 +64,12 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
               Guilds
             </li>
           </NavLink> */}
-          <NavLink className="sidebar__link" exact to="/news">
+          {/* <NavLink className="sidebar__link" exact to="/news">
             <li className="sidebar__list__item" onClick={closeSidebar}>
               <FaBell className="sidebar__icon" />
               {t("nav_news")}
             </li>
-          </NavLink>
+          </NavLink> */}
           <a
             target="_blank"
             className="sidebar__link"

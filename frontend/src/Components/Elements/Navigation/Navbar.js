@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { FaTwitter, FaDiscord, FaYoutube } from "react-icons/fa";
 import LngBtn from "../LngBtn/LngBtn";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({ isOpen, toggleSidebar }) => {
   const hamburgerStyle = isOpen
     ? "navbar__button__component navbar__button__component--active"
     : "navbar__button__component";
 
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Fragment>
@@ -21,7 +21,7 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
           className="navbar__link navbar__link__logo"
           to="home__view"
         >
-          Unimind.
+          Unimind
         </Link>
         <ul className="navbar__list">
           <li className="navbar__list__item">
@@ -47,18 +47,18 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
           <li className="navbar__list__item">
             <Link
               smooth={true}
-              duration={1000}
+              duration={1500}
               className="navbar__link"
-              to="team__view"
+              to="team_view"
             >
               {t("nav_team")}
             </Link>
           </li>
-          <li className="navbar__list__item">
+          {/* <li className="navbar__list__item">
             <NavLink className="navbar__link" to="/news">
               {t("nav_news")}
             </NavLink>
-          </li>
+          </li> */}
           <li className="navbar__list__item">
             <a
               target="_blank"
@@ -100,17 +100,12 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
           </a>
         </div>
 
-        
-
         <LngBtn />
         <button className="navbar__button" onClick={toggleSidebar}>
           <div className={`${hamburgerStyle}`}></div>
           <div className={`${hamburgerStyle}`}></div>
           <div className={`${hamburgerStyle}`}></div>
         </button>
-
-       
- 
       </nav>
     </Fragment>
   );
